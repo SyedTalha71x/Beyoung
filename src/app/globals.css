@@ -13,3 +13,17 @@
     color: white;
     transition: .3s ease;
 }
+
+@keyframes marquee {
+    0% {
+        transform: translateX(250%);
+    }
+
+    100% {
+        transform: translateX(-250%);
+    }
+}
+
+.animate-marquee {
+    animation: marquee 9s linear infinite;
+}

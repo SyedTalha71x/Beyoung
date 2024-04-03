@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
 
     return (
         <div className={montserrat.className}>
-            <nav className="bg-white sticky top-0 text-black shadow-xl p-3 flex flex-none justify-between items-center">
+            <nav className="bg-white sticky top-0 text-black w-full shadow-xl p-3 flex justify-between items-center">
                 <div className="flex items-center">
                     <Link href="/">
                         <div className="text-2xl font-bold">
@@ -30,13 +30,7 @@ const Navbar: React.FC = () => {
                         </div>
                     </Link>
                 </div>
-                <div className="md:hidden">
-                    {isOpen ? (
-                        <RxCross2 className="text-2xl text-purple-900 absolute top-16 z-40 right-2 cursor-pointer" onClick={toggleMenu} />
-                    ) : (
-                        <FiMenu className="text-2xl cursor-pointer" onClick={toggleMenu} />
-                    )}
-                </div>
+
                 <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
                     <div className="absolute top-16 right-0 bg-white w-full shadow-lg">
                         <div className="flex flex-col p-4">
@@ -52,10 +46,18 @@ const Navbar: React.FC = () => {
                             <Link href="/Products">
                                 <div className="my-2 font-medium text-[16px]">Products</div>
                             </Link>
+                            <div className="relative">
+                                <input
+                                    type="text"
+                                    placeholder="Search..."
+                                    className="outline-none text-black placeholder-gray-500 bg-transparent pr-4 py-2 border border-gray-200 rounded-lg w-full"
+                                />
+                                <FiSearch className='absolute top-0 right-0 bottom-0 m-auto mr-2 text-xl text-gray-500 cursor-pointer' />
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className={`hidden uppercase md:flex justify-center flex-grow ${isOpen ? 'hidden' : ''}`}>
+                <div className={`hidden uppercase md:flex justify-start ml-6 flex-grow ${isOpen ? 'hidden' : ''}`}>
                     <Link href="/">
                         <div className="mx-2 font-medium text-[16px]">Home</div>
                     </Link>
@@ -70,23 +72,30 @@ const Navbar: React.FC = () => {
                     </Link>
 
                 </div>
-                <div className="hidden md:flex items-center">
-                    <div className="flex items-center p-2 border py-2 border-gray-200 rounded-lg mx-2">
+                <div className="flex items-center">
+                    <div className="hidden md:flex items-center p-2 border py-2 border-gray-200 rounded-lg mx-2">
                         <input
                             type="text"
                             placeholder="Search..."
                             className="outline-none text-black placeholder-gray-500 bg-transparent"
                         />
-                        <FiSearch className='text-2xl cursor-pointer mb-1 text-gray-500 ml-2' />
+                        <FiSearch className='text-xl cursor-pointer mb-1 text-gray-500 ml-2' />
                     </div>
                     <div className="mx-2 cursor-pointer">
-                        <FiHeart className='text-2xl' />
+                        <FiHeart className='text-xl' />
                     </div>
                     <div className="mx-2 cursor-pointer">
-                        <FiUser className='text-2xl' />
+                        <FiUser className='text-xl' />
                     </div>
                     <div className="mx-2 cursor-pointer">
-                        <FiShoppingCart className='text-2xl' />
+                        <FiShoppingCart className='text-xl' />
+                    </div>
+                    <div className="md:hidden">
+                        {isOpen ? (
+                            <RxCross2 className="text-2xl mt-2 text-purple-900 absolute top-16 z-40 right-2 cursor-pointer" onClick={toggleMenu} />
+                        ) : (
+                            <FiMenu className="text-xl ml-2 cursor-pointer" onClick={toggleMenu} />
+                        )}
                     </div>
                 </div>
             </nav>

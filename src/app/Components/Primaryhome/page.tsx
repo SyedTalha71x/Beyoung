@@ -14,7 +14,7 @@ const page: React.FC = () => {
             <div className='lg:flex lg:justify-center lg:items-center flex justify-center items-center text-center mt-[5%] flex-col mb-4 sm:flex sm:justify-center sm:items-center md:flex md:justify-center md:items-center'>
                 <div className='text-xl font-semibold mb-2'>Feel the unreal</div>
                 <div className={montserrat.className}>
-                    <span className='text-6xl mt-2  font-bold tracking-wide uppercase'>
+                    <span className='lg:text-6xl md:text-4xl sm:text-2xl text-2xl mt-2  font-bold tracking-wide uppercase'>
                         Beyoung Module
                     </span>
                 </div>
