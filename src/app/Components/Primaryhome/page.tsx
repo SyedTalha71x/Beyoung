@@ -1,6 +1,7 @@
 import React from 'react'
 import { Montserrat } from 'next/font/google'
 import Primary from '../Primary/page'
+import Slider from '../Slider/page'
 
 const montserrat = Montserrat({
     weight: ['900'],
@@ -19,9 +20,10 @@ const page: React.FC = () => {
                     </span>
                 </div>
                 <div className='mt-4'>
-                    <button className='semibtn bg-purple-700 text-white py-3 px-10 capitalize text-center rounded-sm'>Shop Now</button>
+                    <button className='semibtn lg:text-[18px] md:text-[18px] sm:text-[17px] text-[16px] bg-purple-700 text-white py-3 px-10 capitalize text-center rounded-sm'>Shop Now</button>
                 </div>
             </div>
+            <Slider />
             <Primary />
         </>
     )
