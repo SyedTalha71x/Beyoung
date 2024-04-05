@@ -17,16 +17,16 @@ body {
     transition: .3s ease;
 }
 
-@keyframes marquee {
+/* @keyframes marquee {
     0% {
-        transform: translateX(250%);
+        transform: translateX(150%);
     }
 
     100% {
-        transform: translateX(-250%);
+        transform: translateX(-150%);
     }
 }
 
 .animate-marquee {
-    animation: marquee 9s linear infinite;
-}
+    animation: marquee 7s linear infinite;
+} */
