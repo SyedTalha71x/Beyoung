@@ -1,19 +1,17 @@
 "use client";
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Montserrat } from 'next/font/google';
 
-const montserrat = Montserrat({
+const MontserratFont = Montserrat({
     weight: ['600'],
     style: ['normal', 'italic'],
     subsets: ['latin'],
-})
+});
 
-
-
-const page: React.FC = () => {
+const Page: React.FC = () => {
     const [uniqueProducts, setUniqueProducts] = useState([]);
 
     useEffect(() => {
@@ -28,11 +26,10 @@ const page: React.FC = () => {
         fetchProducts();
     }, []);
 
-
     return (
         <section className="text-gray-600 body-font mt-6">
             <div className="container px-5 py-24 mx-auto">
-                <div className={montserrat.className}>
+                <div className={MontserratFont.className}>
                     <h1 className='flex justify-center items-center text-xl tracking-wide mb-10 bg-black text-white py-3 w-full'>New Arrivals</h1>
                 </div>
                 <div className="flex flex-wrap -m-4">
@@ -52,7 +49,7 @@ const page: React.FC = () => {
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default page
+export default Page;
