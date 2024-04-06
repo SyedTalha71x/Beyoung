@@ -30,3 +30,29 @@ body {
 .animate-marquee {
     animation: marquee 7s linear infinite;
 } */
+.home {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    height: 50vh;
+    width: 100%;
+    background-color: #F6F2F8;
+    /* Set background color directly on .home */
+    color: black;
+    /* Optionally set text color */
+    margin-bottom: 10%;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    /* Change position to absolute */
+    top: 0;
+    left: 0;
+    background-color: inherit;
+    /* Inherit background color from .home */
+    height: 100%;
+    /* Set height to 100% */
+    width: 100%;
+    z-index: -1;
+}

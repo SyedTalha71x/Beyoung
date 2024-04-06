@@ -1,8 +1,8 @@
 import React from 'react'
 
-const page: React.FC = () => {
+const page = () => {
     return (
-        <div>Contact Page</div>
+        <div>page</div>
     )
 }
 
