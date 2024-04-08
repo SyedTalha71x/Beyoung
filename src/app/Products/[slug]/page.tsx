@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import products from '../data.json'
 import { useParams } from 'next/navigation';
 
-const page = () => {
+const Page = () => {
     const { slug } = useParams();
     const [open, setopen] = useState(false);
     useEffect(() => {
@@ -106,4 +106,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

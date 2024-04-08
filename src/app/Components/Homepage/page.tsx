@@ -12,7 +12,7 @@ const MontserratFont = Montserrat({
     subsets: ['latin'],
 });
 
-const page = () => {
+const Page = () => {
     const [open, setopen] = useState(false)
 
     const handleClose = () => {
@@ -67,4 +67,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
