@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "slug": "Nike-Air-Max-Dn-Black-L",
+        "title": "Nike Air Max Dn",
+        "category": "Men's Shoes",
+        "price": 160,
+        "color": "Black",
+        "size": "L",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d90e3112-ea64-4068-be0d-1e832af89fe8/air-max-dn-mens-shoes-27XkSQ.png",
+        "availableqty": 20
+    },
+    {
+        "id": 2,
+        "slug": "Nike-Sportswear-Tech-Windrunner-White-L",
+        "title": "Nike Sportswear Tech Windrunner",
+        "category": "Hoodies",
+        "price": 100,
+        "color": "White",
+        "size": "L",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/88e7fa47-b28f-4f54-9a90-2c8fc3355a96/sportswear-tech-fleece-windrunner-mens-full-zip-hoodie-rznlBf.png",
+        "availableqty": 20
+    },
+    {
+        "id": 3,
+        "slug": "Luka-2-White-L",
+        "title": "Luka 2",
+        "category": "Basketball Shoes",
+        "price": 120,
+        "color": "White",
+        "size": "L",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/24a8c28f-0419-4281-92c4-fba318d864b9/luka-2-basketball-shoes-vD5Vwt.png",
+        "availableqty": 40
+    },
+    {
+        "id": 4,
+        "slug": "Nike-Everyday-Plus-Yellow-M",
+        "title": "Nike Everyday Plus",
+        "category": "Sports Socks",
+        "price": 20,
+        "color": "Yellow",
+        "size": "M",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/46377019-705d-41b2-bfec-7e04e74b8cf0/everyday-plus-cushioned-crew-socks-3-pairs-D0XnCW.png",
+        "availableqty": 20
+    },
+    {
+        "id": 5,
+        "slug": "Nike-Hayward-Gray-L",
+        "title": "Nike Hayward",
+        "category": "Sports Backpack",
+        "price": 55,
+        "color": "Gray",
+        "size": "L",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c13b17a9-318c-4a90-b284-6ebfcef6df9b/hayward-backpack-26l-1wD06c.png",
+        "availableqty": 20
+    },
+    {
+        "id": 6,
+        "slug": "WNBA-Orange-L",
+        "title": "WNBA",
+        "category": "Sports Hoodie",
+        "price": 75,
+        "color": "Orange",
+        "size": "L",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/09ea5010-91a4-46c4-93ec-07af9a201f8f/wnba-mens-fleece-pullover-hoodie-nhrtmj.png",
+        "availableqty": 20
+    },
+    {
+        "id": 7,
+        "slug": "Nike-Sportswear-Essential-Gray-M",
+        "title": "Nike Sportswear Essential",
+        "category": "Women'Tshirt",
+        "price": 85,
+        "color": "Gray",
+        "size": "M",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1ca23de5-1486-4079-8805-c1f52c05d292/sportswear-essential-womens-t-shirt-GFbGbt.png",
+        "availableqty": 20
+    },
+    {
+        "id": 8,
+        "slug": "Nike-Infinity-G-NN-Light-Pink-L",
+        "title": "Nike Infinity G NN",
+        "category": "Golf Shoes",
+        "price": 96,
+        "color": "Light Pink",
+        "size": "L",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4f3bf650-45f1-499c-87a5-19ba3e3cc1c7/infinity-g-nn-golf-shoes-wide-rJL0sM.png",
+        "availableqty": 20
+    }
+]

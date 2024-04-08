@@ -5,9 +5,13 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname: 'static.nike.com'
+            },
+            {
+                protocol: 'https',
+                hostname: 'i.pinimg.com'
             }
         ]
-    }
+    },
 };
 
 export default nextConfig;

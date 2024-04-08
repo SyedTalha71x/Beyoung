@@ -4,35 +4,34 @@ import axios from 'axios';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Montserrat } from 'next/font/google';
-
+import uniqueProducts from '../../Products/data.json'
 const MontserratFont = Montserrat({
-    weight: ['600'],
+    weight: ['700'],
     style: ['normal', 'italic'],
     subsets: ['latin'],
 });
 
 const Page: React.FC = () => {
-    const [uniqueProducts, setUniqueProducts] = useState([]);
-
-    useEffect(() => {
-        const fetchProducts = async () => {
-            try {
-                const response = await axios.get('http://localhost:3000/api/GetProducts');
-                setUniqueProducts(response.data.fetchproducts);
-            } catch (error) {
-                console.log(error);
-            }
-        };
-        fetchProducts();
-    }, []);
+    // const [uniqueProducts, setUniqueProducts] = useState([]);
+    // useEffect(() => {
+    //     const fetchProducts = async () => {
+    //         try {
+    //             const response = await axios.get('http://localhost:3000/api/GetProducts');
+    //             setUniqueProducts(response.data.fetchproducts);
+    //         } catch (error) {
+    //             console.log(error);
+    //         }
+    //     };
+    //     fetchProducts();
+    // }, []);
 
     return (
         <section className="text-gray-600 body-font mt-6">
-            <div className="container px-5 py-24 mx-auto">
+            <div className="container  px-5 py-24 mx-auto">
                 <div className={MontserratFont.className}>
-                    <h1 className='flex justify-center items-center text-xl tracking-wide mb-10 bg-black text-white py-3 w-full'>New Arrivals</h1>
+                    <h1 className='manygloweffect flex justify-center items-center text-xl tracking-wide mb-10 bg-black text-white py-3 w-full'>New Arrivals</h1>
                 </div>
-                <div className="flex flex-wrap -m-4">
+                <div className="flex flex-wrap -m-4 homecontent">
                     {uniqueProducts.map((item: any, index: any) => (
                         <div key={index} className="lg:w-1/4 md:w-1/2 p-4 w-full">
                             <Link href={`/Products/${item.slug}`} passHref>
@@ -42,6 +41,7 @@ const Page: React.FC = () => {
                             </Link>
                             <div className="mt-4">
                                 <h2 className="text-gray-900 title-font text-lg font-medium">{item.title}</h2>
+                                <span className='text-gray-500 font-semibold'>{item.category}</span>
                                 <p className="mt-1">${item.price}</p>
                             </div>
                         </div>
