@@ -9,6 +9,18 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname: 'i.pinimg.com'
+            },
+            {
+                protocol: 'https',
+                hostname: 'images.pexels.com'
+            },
+            {
+                protocol: 'https',
+                hostname: 'www.spl.com.pk'
+            },
+            {
+                protocol: 'https',
+                hostname:'i.ibb.co'
             }
         ]
     },

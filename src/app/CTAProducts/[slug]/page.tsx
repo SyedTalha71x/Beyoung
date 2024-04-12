@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect, useContext } from 'react'
-import products from '../data.json'
+import products from '../../Components/CTA/data.json'
 import { useParams } from 'next/navigation';
 import storeContext from '@/app/Context/storeContext';
 import Products from '@/utils/Models/Products';

@@ -31,13 +31,13 @@ const Page = () => {
         <>
             {open && (
                 <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-50">
-                    <div className="bg-white rounded-lg p-8 relative w-full mx-4 max-w-full md:max-w-2xl lg:max-w-3xl transition-opacity duration-300">
+                    <div className="bg-white rounded-lg p-12 relative w-full mx-4 max-w-full md:max-w-2xl lg:max-w-3xl transition-opacity duration-300">
                         <button onClick={handleClose} className="absolute top-2 right-2">
                             <RxCross2 className="text-3xl text-purple-900 font-bold" />
                         </button>
                         <div className="flex flex-col md:flex-row items-center">
                             <div className="w-[65%] md:w-[70%] pr-6 mb-6 md:mb-0">
-                                <Image src="https://i.pinimg.com/originals/82/f3/9d/82f39dba75351d86d7c866f74f5862b8.png" className="h-full w-full" alt="Dummy Image" width={800} height={600} />
+                                <Image src="https://www.spl.com.pk/wp/wp-content/uploads/2020/09/NIKE-LOGO-PNG-300x300.png" className="h-full w-full" alt="Dummy Image" width={800} height={600} />
                             </div>
                             <div className="w-[65%] text-center md:w-[70%]">
                                 <div className={MontserratFont.className}>

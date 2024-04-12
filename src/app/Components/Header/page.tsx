@@ -1,11 +1,17 @@
 "use client";
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect, useRef, useContext } from 'react';
 import { FiUser, FiShoppingCart, FiHeart, FiSearch, FiMenu, FiX } from 'react-icons/fi';
 import Image from 'next/image';
 import img from '../../../../src/images/logo.jpg';
 import { RxCross2 } from "react-icons/rx";
 import { Montserrat } from 'next/font/google';
+import storeContext from '@/app/Context/storeContext';
+import { CiCircleMinus } from "react-icons/ci";
+import { CiCirclePlus } from "react-icons/ci";
+import { Fragment } from 'react'
+import { Dialog, Transition } from '@headlessui/react'
+import { XMarkIcon } from '@heroicons/react/24/outline'
 
 const montserrat = Montserrat({
     weight: ['600'],
@@ -16,13 +22,18 @@ const montserrat = Montserrat({
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
 
+
+
+    const context = useContext(storeContext);
+    const { addtoCart, removefromCart, cart, subtotal } = context
+
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
 
     return (
         <div className={montserrat.className}>
-            <nav className="bg-white sticky top-0 text-black w-full shadow-xl p-3 flex justify-between items-center">
+            <nav className="bg-white fixed top-0 z-40 text-black w-full shadow-xl p-3 flex justify-between items-center">
                 <div className="flex items-center">
                     <Link href="/">
                         <div className="text-2xl font-bold">
@@ -43,7 +54,7 @@ const Navbar: React.FC = () => {
                             <Link href="/Contact">
                                 <div className="my-2 font-medium text-[16px]">Contact</div>
                             </Link>
-                            <Link href="/Products">
+                            <Link href="/Shoesproducts">
                                 <div className="my-2 font-medium text-[16px]">Products</div>
                             </Link>
                             <div className="relative">
@@ -67,7 +78,7 @@ const Navbar: React.FC = () => {
                     <Link href="/Contact">
                         <div className="mx-2 font-medium text-[16px]">Contact</div>
                     </Link>
-                    <Link href="/Products">
+                    <Link href="/Shoesproducts">
                         <div className="mx-2 font-medium text-[16px]">Products</div>
                     </Link>
 
@@ -88,7 +99,9 @@ const Navbar: React.FC = () => {
                         <FiUser className='text-xl' />
                     </div>
                     <div className="mx-2 cursor-pointer">
-                        <FiShoppingCart className='text-xl' />
+                        <Link href={'/Cart'}>
+                            <FiShoppingCart className='text-xl' />
+                        </Link>
                     </div>
                     <div className="md:hidden">
                         {isOpen ? (

@@ -1,7 +1,9 @@
+"use client";
 import React from 'react'
 import { Montserrat } from 'next/font/google'
 import Primary from '../Primary/page'
 import Slider from '../Slider/page'
+import { useRouter } from 'next/navigation'
 
 const montserrat = Montserrat({
     weight: ['900'],
@@ -10,6 +12,11 @@ const montserrat = Montserrat({
 })
 
 const page: React.FC = () => {
+    const router = useRouter();
+
+    const redirecttoProducts = ()=>{
+        router.push('/Shoesproducts')
+    }
     return (
         <>
             <div className='lg:flex lg:justify-center lg:items-center flex justify-center items-center text-center mt-[5%] flex-col mb-4 sm:flex sm:justify-center sm:items-center md:flex md:justify-center md:items-center'>
@@ -20,7 +27,7 @@ const page: React.FC = () => {
                     </span>
                 </div>
                 <div className='mt-3'>
-                    <button className='semibtn lg:text-[18px] md:text-[18px] sm:text-[15px] text-[14px] bg-purple-700 text-white py-3 px-10 capitalize text-center rounded-sm'>Shop Now</button>
+                    <button onClick={redirecttoProducts} className='semibtn lg:text-[18px] md:text-[18px] sm:text-[15px] text-[14px] bg-purple-700 text-white py-3 px-10 capitalize text-center rounded-sm'>Shop Now</button>
                 </div>
             </div>
             {/* <Slider /> */}
