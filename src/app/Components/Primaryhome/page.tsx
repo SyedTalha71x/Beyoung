@@ -11,7 +11,7 @@ const montserrat = Montserrat({
     subsets: ['latin'],
 })
 
-const page: React.FC = () => {
+const Page: React.FC = () => {
     const router = useRouter();
 
     const redirecttoProducts = ()=>{
@@ -36,4 +36,4 @@ const page: React.FC = () => {
     )
 }
 
-export default page
+export default Page
