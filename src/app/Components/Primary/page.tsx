@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Montserrat } from 'next/font/google';
 import uniqueProducts from '../../Products/data.json'
-import CTA from '../CTA/page'
+// import CTA from '../CTA/page'
 
 const MontserratFont = Montserrat({
     weight: ['700'],
@@ -52,7 +52,7 @@ const Page: React.FC = () => {
                     </div>
                 </div>
             </section>
-            <CTA />
+            {/* <CTA /> */}
         </>
     );
 };
