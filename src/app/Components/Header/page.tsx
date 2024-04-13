@@ -93,7 +93,9 @@ const Navbar: React.FC = () => {
                         <FiSearch className='text-xl cursor-pointer mb-1 text-gray-500 ml-2' />
                     </div>
                     <div className="mx-2 cursor-pointer">
-                        <FiHeart className='text-xl' />
+                        <Link href={"/Favourites"}>
+                            <FiHeart className='text-xl' />
+                        </Link>
                     </div>
                     <div className="mx-2 cursor-pointer">
                         <FiUser className='text-xl' />

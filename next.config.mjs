@@ -21,6 +21,10 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname:'i.ibb.co'
+            },
+            {
+                protocol: 'https',
+                hostname:'media1.calvinklein.com'
             }
         ]
     },

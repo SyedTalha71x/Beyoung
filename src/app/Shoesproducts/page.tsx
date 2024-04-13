@@ -64,20 +64,14 @@ const Page = () => {
                             <a className="block relative h-70 rounded overflow-hidden">
                                 <Image alt="ecommerce" className="object-cover object-top w-full h-full block" height={400} width={400} src={item.image} />
                             </a>
-                            <div className="mt-4">
+                            <div className=" flex items-center  justify-between mt-4">
                                 <h2 className="text-gray-900 title-font text-lg font-medium">{item.title}</h2>
                                 <p className="mt-1">${item.price}</p>
                             </div>
-
-                            <div className="flex items-center justify-between mt-6 pb-5 border-b-2 border-gray-100 mb-5">
-                                {item.color.map((color: any, colorIndex: any) => (
-                                    <div key={colorIndex} className="flex gap-2 ">
-                                        <button className={`border-2 border-gray-300 ${color === "Blue" ? 'bg-blue-600' : color === 'Black' ? 'bg-black' : color === 'White' ? 'bg-white' : color === 'Gray' ? 'bg-gray-700' : ''} w-6 h-6 focus:outline-none`}></button>
-                                    </div>
-                                ))}
+                            <div className='flex items-center'>
                                 {item.size.map((size: any, sizeIndex: any) => {
                                     return <div key={sizeIndex} className="flex items-center">
-                                        <div className="flex ">
+                                        <div className="flex font-semibold ">
                                             {size === 'L' && <option>L</option>}
                                             {size === 'S' && <option>S</option>}
                                             {size === 'M' && <option>M</option>}
@@ -85,6 +79,14 @@ const Page = () => {
                                         </div>
                                     </div>
                                 })}
+
+                            </div>
+                            <div className='flex items-center gap-2'>
+                                {item.color.map((color: any, colorIndex: any) => (
+                                    <div key={colorIndex} className="flex gap-2 ">
+                                        <button className={`border-2 border-gray-300 ${color === "Blue" ? 'bg-blue-600' : color === 'Black' ? 'bg-black' : color === 'White' ? 'bg-white' : color === 'Gray' ? 'bg-gray-700' : ''} w-6 h-6 focus:outline-none`}></button>
+                                    </div>
+                                ))}
                             </div>
 
                         </div>

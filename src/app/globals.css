@@ -30,9 +30,13 @@ body {
     position: relative;
     top: 0px;
     right: 0px;
-    height: 50vh;
+    height: 70vh;
     width: 100%;
-    background-color: #F6F2F8;
+    /* background-color: #F6F2F8; */
+    background: url('https://images.pexels.com/photos/4962787/pexels-photo-4962787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+   background-position: center ;
+   object-fit: top;
+   background-repeat: no-repeat;
     /* Set background color directly on .home */
     color: black;
     /* Optionally set text color */

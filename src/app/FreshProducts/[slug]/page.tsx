@@ -13,8 +13,8 @@ const Page = () => {
     const context = useContext(storeContext);
     const { addtoCart, removefromCart, cart } = context;
     const [newProduct, setNewProduct] = useState<{ id: number; slug: string; title: string; category: string; price: number; color: string; size: string; image: string; availableqty: number; } | null>(null);
-
     const [Open, setOpen] = useState(false);
+
     useEffect(() => {
         const product = products.find(item => item.slug === slug)
         if (product) {
@@ -23,7 +23,9 @@ const Page = () => {
         const timeout = setTimeout(() => {
             setOpen(true);
         }, 3000);
+
         return () => { clearTimeout(timeout) }
+
     }, [slug]);
 
     const handleAddToCart = () => {

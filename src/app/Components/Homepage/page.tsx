@@ -6,6 +6,7 @@ import Primaryhome from '../Primaryhome/page'
 import Link from 'next/link';
 import { RxCross2 } from "react-icons/rx";
 import { Montserrat } from 'next/font/google';
+import Slider from '../Slider/page'
 const MontserratFont = Montserrat({
     weight: ['900'],
     style: ['normal', 'italic'],
@@ -63,6 +64,7 @@ const Page = () => {
                 <Image src={bgimage} height={2041} width={5400} className='h-full w-full object-cover object-center block' alt='bg' />
             </div>
             <Primaryhome />
+            {/* <Slider/> */}
         </>
     )
 }

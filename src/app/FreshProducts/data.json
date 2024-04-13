@@ -11,6 +11,28 @@
         "availableqty": 20
     },
     {
+        "id": 1,
+        "slug": "Nike-Air-Max-Dn-Blue-L",
+        "title": "Nike Air Max Dn",
+        "category": "Men's Shoes",
+        "price": 160,
+        "color": "Blue",
+        "size": "L",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d90e3112-ea64-4068-be0d-1e832af89fe8/air-max-dn-mens-shoes-27XkSQ.png",
+        "availableqty": 10
+    },
+    {
+        "id": 1,
+        "slug": "Nike-Air-Max-Dn-Gray-M",
+        "title": "Nike Air Max Dn",
+        "category": "Men's Shoes",
+        "price": 160,
+        "color": "Gray",
+        "size": "M",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d90e3112-ea64-4068-be0d-1e832af89fe8/air-max-dn-mens-shoes-27XkSQ.png",
+        "availableqty": 10
+    },
+    {
         "id": 2,
         "slug": "Nike-Sportswear-Tech-Windrunner-White-L",
         "title": "Nike Sportswear Tech Windrunner",
@@ -18,6 +40,28 @@
         "price": 100,
         "color": "White",
         "size": "L",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/88e7fa47-b28f-4f54-9a90-2c8fc3355a96/sportswear-tech-fleece-windrunner-mens-full-zip-hoodie-rznlBf.png",
+        "availableqty": 20
+    },
+    {
+        "id": 2,
+        "slug": "Nike-Sportswear-Tech-Windrunner-Blue-L",
+        "title": "Nike Sportswear Tech Windrunner",
+        "category": "Hoodies",
+        "price": 100,
+        "color": "Blue",
+        "size": "L",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/88e7fa47-b28f-4f54-9a90-2c8fc3355a96/sportswear-tech-fleece-windrunner-mens-full-zip-hoodie-rznlBf.png",
+        "availableqty": 20
+    },
+    {
+        "id": 2,
+        "slug": "Nike-Sportswear-Tech-Windrunner-Black-M",
+        "title": "Nike Sportswear Tech Windrunner",
+        "category": "Hoodies",
+        "price": 100,
+        "color": "Black",
+        "size": "M",
         "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/88e7fa47-b28f-4f54-9a90-2c8fc3355a96/sportswear-tech-fleece-windrunner-mens-full-zip-hoodie-rznlBf.png",
         "availableqty": 20
     },
@@ -33,6 +77,17 @@
         "availableqty": 40
     },
     {
+        "id": 3,
+        "slug": "Luka-2-Blue-M",
+        "title": "Luka 2",
+        "category": "Basketball Shoes",
+        "price": 120,
+        "color": "Blue",
+        "size": "M",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/24a8c28f-0419-4281-92c4-fba318d864b9/luka-2-basketball-shoes-vD5Vwt.png",
+        "availableqty": 40
+    },
+    {
         "id": 4,
         "slug": "Nike-Everyday-Plus-Yellow-M",
         "title": "Nike Everyday Plus",
@@ -40,6 +95,28 @@
         "price": 20,
         "color": "Yellow",
         "size": "M",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/46377019-705d-41b2-bfec-7e04e74b8cf0/everyday-plus-cushioned-crew-socks-3-pairs-D0XnCW.png",
+        "availableqty": 20
+    },
+    {
+        "id": 4,
+        "slug": "Nike-Everyday-Plus-White-L",
+        "title": "Nike Everyday Plus",
+        "category": "Sports Socks",
+        "price": 20,
+        "color": "White",
+        "size": "L",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/46377019-705d-41b2-bfec-7e04e74b8cf0/everyday-plus-cushioned-crew-socks-3-pairs-D0XnCW.png",
+        "availableqty": 20
+    },
+    {
+        "id": 4,
+        "slug": "Nike-Everyday-Plus-Black-XL",
+        "title": "Nike Everyday Plus",
+        "category": "Sports Socks",
+        "price": 20,
+        "color": "Black",
+        "size": "XL",
         "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/46377019-705d-41b2-bfec-7e04e74b8cf0/everyday-plus-cushioned-crew-socks-3-pairs-D0XnCW.png",
         "availableqty": 20
     },
@@ -55,12 +132,56 @@
         "availableqty": 20
     },
     {
+        "id": 5,
+        "slug": "Nike-Hayward-Black-L",
+        "title": "Nike Hayward",
+        "category": "Sports Backpack",
+        "price": 55,
+        "color": "Black",
+        "size": "L",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c13b17a9-318c-4a90-b284-6ebfcef6df9b/hayward-backpack-26l-1wD06c.png",
+        "availableqty": 20
+    },
+    {
+        "id": 5,
+        "slug": "Nike-Hayward-Gray-M",
+        "title": "Nike Hayward",
+        "category": "Sports Backpack",
+        "price": 55,
+        "color": "Gray",
+        "size": "M",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c13b17a9-318c-4a90-b284-6ebfcef6df9b/hayward-backpack-26l-1wD06c.png",
+        "availableqty": 20
+    },
+    {
         "id": 6,
         "slug": "WNBA-Orange-L",
         "title": "WNBA",
         "category": "Sports Hoodie",
         "price": 75,
         "color": "Orange",
+        "size": "L",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/09ea5010-91a4-46c4-93ec-07af9a201f8f/wnba-mens-fleece-pullover-hoodie-nhrtmj.png",
+        "availableqty": 20
+    },
+    {
+        "id": 6,
+        "slug": "WNBA-Black-M",
+        "title": "WNBA",
+        "category": "Sports Hoodie",
+        "price": 75,
+        "color": "Black",
+        "size": "M",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/09ea5010-91a4-46c4-93ec-07af9a201f8f/wnba-mens-fleece-pullover-hoodie-nhrtmj.png",
+        "availableqty": 20
+    },
+    {
+        "id": 6,
+        "slug": "WNBA-Gray-L",
+        "title": "WNBA",
+        "category": "Sports Hoodie",
+        "price": 75,
+        "color": "Gray",
         "size": "L",
         "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/09ea5010-91a4-46c4-93ec-07af9a201f8f/wnba-mens-fleece-pullover-hoodie-nhrtmj.png",
         "availableqty": 20
@@ -77,6 +198,17 @@
         "availableqty": 20
     },
     {
+        "id": 7,
+        "slug": "Nike-Sportswear-Essential-White-L",
+        "title": "Nike Sportswear Essential",
+        "category": "Women'Tshirt",
+        "price": 85,
+        "color": "White",
+        "size": "L",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1ca23de5-1486-4079-8805-c1f52c05d292/sportswear-essential-womens-t-shirt-GFbGbt.png",
+        "availableqty": 20
+    },
+    {
         "id": 8,
         "slug": "Nike-Infinity-G-NN-Light-Pink-L",
         "title": "Nike Infinity G NN",
@@ -84,6 +216,17 @@
         "price": 96,
         "color": "Light Pink",
         "size": "L",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4f3bf650-45f1-499c-87a5-19ba3e3cc1c7/infinity-g-nn-golf-shoes-wide-rJL0sM.png",
+        "availableqty": 20
+    },
+    {
+        "id": 8,
+        "slug": "Nike-Infinity-G-NN-White-M",
+        "title": "Nike Infinity G NN",
+        "category": "Golf Shoes",
+        "price": 96,
+        "color": "White",
+        "size": "M",
         "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4f3bf650-45f1-499c-87a5-19ba3e3cc1c7/infinity-g-nn-golf-shoes-wide-rJL0sM.png",
         "availableqty": 20
     },
@@ -99,6 +242,17 @@
         "availableqty": 13
     },
     {
+        "id": 9,
+        "slug": "Jordan-Charcoal-XL",
+        "title": "Jordan",
+        "category": "Women's Woven Solid Top",
+        "price": 75,
+        "color": "Charcoal",
+        "size": "XL",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f959d3d4-1239-46a6-9ab2-b8c67658ec86/jordan-womens-woven-solid-top-hGhl7g.png",
+        "availableqty": 13
+    },
+    {
         "id": 10,
         "slug": "Jordan-Sophia-Black-M",
         "title": "Jordan Sophia",
@@ -110,6 +264,17 @@
         "availableqty": 18
     },
     {
+        "id": 10,
+        "slug": "Jordan-Sophia-Blue-S",
+        "title": "Jordan Sophia",
+        "category": "Women's Slides",
+        "price": 85,
+        "color": "Blue",
+        "size": "S",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4586a1cf-f65f-485c-b538-eb56be9b25c2/jordan-sophia-womens-slides-8DlFQl.png",
+        "availableqty": 18
+    },
+    {
         "id": 11,
         "slug": "Jordan-One-Take-5-White-L",
         "title": "Jordan One Take 5",
@@ -117,6 +282,28 @@
         "price": 100,
         "color": "White",
         "size": "L",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d1940395-e3a6-48ee-aaa7-b890ab7c583e/jordan-one-take-5-basketball-shoes-5lWJJ3.png",
+        "availableqty": 11
+    },
+    {
+        "id": 11,
+        "slug": "Jordan-One-Take-5-Black-M",
+        "title": "Jordan One Take 5",
+        "category": "Basketball Shoes",
+        "price": 100,
+        "color": "Black",
+        "size": "M",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d1940395-e3a6-48ee-aaa7-b890ab7c583e/jordan-one-take-5-basketball-shoes-5lWJJ3.png",
+        "availableqty": 11
+    },
+    {
+        "id": 11,
+        "slug": "Jordan-One-Take-5-Blue-XL",
+        "title": "Jordan One Take 5",
+        "category": "Basketball Shoes",
+        "price": 100,
+        "color": "Blue",
+        "size": "XL",
         "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d1940395-e3a6-48ee-aaa7-b890ab7c583e/jordan-one-take-5-basketball-shoes-5lWJJ3.png",
         "availableqty": 11
     },
