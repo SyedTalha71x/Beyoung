@@ -60,7 +60,7 @@ const Page = () => {
                 </div>
             )}
             <div>
-                <Image src={bgimage} height={2041} width={5400} className='h-full w-full object-cover block' alt='bg' />
+                <Image src={bgimage} height={2041} width={5400} className='h-full w-full object-cover object-center block' alt='bg' />
             </div>
             <Primaryhome />
         </>

@@ -4,8 +4,8 @@ import axios from 'axios';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Montserrat } from 'next/font/google';
-import uniqueProducts from '../../Products/data.json'
-// import CTA from '../CTA/page'
+import uniqueProducts from '../../FreshProducts/data.json'
+import Shopbutton from '../../Components/CTA/Shopbutton/page'
 
 const MontserratFont = Montserrat({
     weight: ['700'],
@@ -14,19 +14,8 @@ const MontserratFont = Montserrat({
 });
 
 const Page: React.FC = () => {
-    // const [uniqueProducts, setUniqueProducts] = useState([]);
-    // useEffect(() => {
-    //     const fetchProducts = async () => {
-    //         try {
-    //             const response = await axios.get('http://localhost:3000/api/GetProducts');
-    //             setUniqueProducts(response.data.fetchproducts);
-    //         } catch (error) {
-    //             console.log(error);
-    //         }
-    //     };
-    //     fetchProducts();
-    // }, []);
 
+    const newproducts = uniqueProducts.slice(0, 8)
     return (
         <>
             <section className="text-gray-600 body-font mt-6">
@@ -35,9 +24,9 @@ const Page: React.FC = () => {
                         <h1 className='manygloweffect flex justify-center items-center text-xl tracking-wide mb-10 bg-black text-white py-3 w-full'>New Arrivals</h1>
                     </div>
                     <div className="flex flex-wrap -m-4 homecontent">
-                        {uniqueProducts.map((item: any, index: any) => (
+                        {newproducts.map((item: any, index: any) => (
                             <div key={index} className="lg:w-1/4 md:w-1/2 p-4 w-full">
-                                <Link href={`/Products/${item.slug}`} passHref>
+                                <Link href={`/FreshProducts/${item.slug}`} passHref>
                                     <div className="block relative h-53 rounded overflow-hidden">
                                         <Image height={400} width={400} alt="ecommerce" className="object-cover object-center  w-full h-full block" src={item.image} />
                                     </div>
@@ -52,7 +41,7 @@ const Page: React.FC = () => {
                     </div>
                 </div>
             </section>
-            {/* <CTA /> */}
+            <Shopbutton />
         </>
     );
 };

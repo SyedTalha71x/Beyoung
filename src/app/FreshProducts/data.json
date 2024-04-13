@@ -86,5 +86,49 @@
         "size": "L",
         "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4f3bf650-45f1-499c-87a5-19ba3e3cc1c7/infinity-g-nn-golf-shoes-wide-rJL0sM.png",
         "availableqty": 20
+    },
+    {
+        "id": 9,
+        "slug": "Jordan-JadeSmoke-L",
+        "title": "Jordan",
+        "category": "Women's Woven Solid Top",
+        "price": 75,
+        "color": "Jade Smoke",
+        "size": "L",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f959d3d4-1239-46a6-9ab2-b8c67658ec86/jordan-womens-woven-solid-top-hGhl7g.png",
+        "availableqty": 13
+    },
+    {
+        "id": 10,
+        "slug": "Jordan-Sophia-Black-M",
+        "title": "Jordan Sophia",
+        "category": "Women's Slides",
+        "price": 85,
+        "color": "Black",
+        "size": "M",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4586a1cf-f65f-485c-b538-eb56be9b25c2/jordan-sophia-womens-slides-8DlFQl.png",
+        "availableqty": 18
+    },
+    {
+        "id": 11,
+        "slug": "Jordan-One-Take-5-White-L",
+        "title": "Jordan One Take 5",
+        "category": "Basketball Shoes",
+        "price": 100,
+        "color": "White",
+        "size": "L",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d1940395-e3a6-48ee-aaa7-b890ab7c583e/jordan-one-take-5-basketball-shoes-5lWJJ3.png",
+        "availableqty": 11
+    },
+    {
+        "id": 12,
+        "slug": "Jordan-Brand-Black-L",
+        "title": "Jordan Brand",
+        "category": "Men's T-Shirt",
+        "price": 42,
+        "color": "Black",
+        "size": "L",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/71daed89-5d81-450d-86dc-fbe8cc17df25/jordan-brand-mens-t-shirt-DLbnG5.png",
+        "availableqty": 19
     }
 ]

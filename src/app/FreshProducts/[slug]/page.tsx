@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect, useContext } from 'react'
-import products from '../../Components/CTA/data.json'
+import products from '../data.json'
 import { useParams } from 'next/navigation';
 import storeContext from '@/app/Context/storeContext';
 import Products from '@/utils/Models/Products';
@@ -43,7 +43,7 @@ const Page = () => {
             <section className="text-gray-600 mt-10 cursor-pointer body-font overflow-hidden">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="lg:w-4/5 mx-auto flex flex-wrap">
-                        <Image height={400} width={400} alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-top rounded" src={newproducts?.image || 'default-image-url'} />
+                        <Image height={400} width={400} alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-top rounded" src={newproducts?.image ?? 'default-image-url'} />
                         <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                             <h2 className="text-sm title-font text-gray-500 tracking-widest">{newproducts?.category}</h2>
                             <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">{newproducts?.title}</h1>
