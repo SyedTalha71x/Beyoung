@@ -7,18 +7,36 @@ const StoreState = (props) => {
     const [subtotal, setsubtotal] = useState(0)
     const [Delievry, setDelievry] = useState(0)
     const [finalsubtotal, setfinalsubtotal] = useState(0)
+    const [favourite, setfavourite] = useState({})
 
     useEffect(() => {
-        try {
-            if (localStorage.getItem('cart')) {
-                setcart(JSON.parse(localStorage.getItem('cart')))
-                saveCart(JSON.parse(localStorage.getItem('cart')))
+        const cartsystem = () => {
+            try {
+                if (localStorage.getItem('cart')) {
+                    setcart(JSON.parse(localStorage.getItem('cart')))
+                    saveCart(JSON.parse(localStorage.getItem('cart')))
+                }
+            }
+            catch (error) {
+                console.log(error);
+                localStorage.clear();
             }
         }
-        catch (error) {
-            console.log(error);
-            localStorage.clear();
+        const favoruitesystem = () => {
+
+            try {
+                if (localStorage.getItem('favourite')) {
+                    setfavourite(JSON.parse(localStorage.getItem('favourite')))
+                    saveFavourite(JSON.parse(localStorage.getItem('favourite')))
+                }
+            }
+            catch (error) {
+                console.log(error);
+                localStorage.clear();
+            }
         }
+        cartsystem();
+        favoruitesystem();
     }, [])
 
     const ClearCart = () => {
@@ -72,8 +90,45 @@ const StoreState = (props) => {
         setcart(newCart);
         saveCart(newCart)
     }
+
+    const addtoFavourite = (ItemCode, qty, image, price, name, size, color) => {
+        let newFavoruite = favourite;
+        if (ItemCode in newFavoruite) {
+            newFavoruite[ItemCode].qty += qty;
+        }
+        else {
+            newFavoruite[ItemCode] = { qty: 1, image, price, name, size, color }
+        }
+        setfavourite(newFavoruite);
+        saveFavourite(newFavoruite)
+    }
+
+    const removefromfavoruite = (ItemCode, qty, image, price, name, size, color) => {
+        let newFavoruite = favourite;
+        if (ItemCode in newFavoruite) {
+            newFavoruite[ItemCode].qty -= qty;
+        }
+        if (newFavoruite[ItemCode].qty <= 0) {
+            delete newFavoruite[ItemCode];
+        }
+        setfavourite(newFavoruite);
+        saveFavourite(newFavoruite);
+    }
+
+    const saveFavourite = (favourite) => {
+        localStorage.setItem('favourite', JSON.stringify(favourite));
+    }
+
+    const ClearFavourite = () => {
+        setfavourite({});
+        localStorage.removeItem('favourite')
+    }
+
     return (
-        <StoreContext.Provider value={{ cart, addtoCart, removefromCart, ClearCart, subtotal, Delievry, finalsubtotal }}>
+        <StoreContext.Provider value={{
+            cart, addtoCart, removefromCart, ClearCart, subtotal, Delievry, finalsubtotal,
+            favourite, addtoFavourite, removefromfavoruite, ClearFavourite, Favoruitelength: Object.keys(favourite).length
+        }}>
             {props.children}
         </StoreContext.Provider>
     )
