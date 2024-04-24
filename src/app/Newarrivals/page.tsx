@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 import { Montserrat } from 'next/font/google';
-import Variants from '../Variants/page';
 import uniqueProducts from '../FreshProducts/data.json'
 
 const MontserratFont = Montserrat({
