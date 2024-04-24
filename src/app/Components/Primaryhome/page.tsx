@@ -4,6 +4,7 @@ import { Montserrat } from 'next/font/google'
 import Primary from '../Primary/page'
 import Slider from '../Slider/page'
 import { useRouter } from 'next/navigation'
+import Categories from '../../Categories/page'
 
 const montserrat = Montserrat({
     weight: ['900'],
@@ -14,7 +15,7 @@ const montserrat = Montserrat({
 const Page: React.FC = () => {
     const router = useRouter();
 
-    const redirecttoProducts = ()=>{
+    const redirecttoProducts = () => {
         router.push('/Shoesproducts')
     }
     return (
@@ -31,7 +32,9 @@ const Page: React.FC = () => {
                 </div>
             </div>
             {/* <Slider /> */}
+            <Slider />
             <Primary />
+            <Categories />
         </>
     )
 }

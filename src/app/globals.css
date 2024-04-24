@@ -4,6 +4,7 @@
 
 body {
     overflow-x: hidden;
+    background-color: #fcfcfc;
 }
 
 
@@ -34,9 +35,9 @@ body {
     width: 100%;
     /* background-color: #F6F2F8; */
     background: url('https://images.pexels.com/photos/4962787/pexels-photo-4962787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-   background-position: center ;
-   object-fit: top;
-   background-repeat: no-repeat;
+    background-position: center;
+    object-fit: top;
+    background-repeat: no-repeat;
     /* Set background color directly on .home */
     color: black;
     /* Optionally set text color */
@@ -83,4 +84,82 @@ body {
 
 .manygloweffect {
     animation: glow 5s infinite alternate;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    /* Display inline block */
+    position: relative;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    /* Add content after the element */
+    position: absolute;
+    /* Position absolute for pseudo-element */
+    width: 100%;
+    /* Full width */
+    transform: scaleX(0);
+    /* Initial scale of 0 for underline effect */
+    height: 2px;
+    /* Height of the underline */
+    bottom: 0;
+    /* Align to bottom */
+    left: 0;
+    /* Align to left */
+    background-color:
+        black;
+    /* Background color of the underline */
+    transform-origin: bottom right;
+    /* Set transform origin */
+    transition: transform 0.25s ease-out;
+    /* Transition effect for the underline */
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    /* Scale the underline on hover */
+    transform-origin: bottom left;
+    /* Set transform origin */
+}
+
+@media screen and (max-width: 750px) {
+    .categoriessection {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.image_2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.image_2:hover {
+    opacity: 1;
+    transition: .4s all;
+}
+
+.imagehome {
+    height: 100%;
+    width: 100%;
+}
+
+.imagehome::before {
+    content: '';
+    background: url('https://www.youngla.com/cdn/shop/files/YLA_12.311_c320a5b2-1cd9-4ec4-b010-51f752f07e39_400x.jpg?v=1712696754');
+    background-repeat: no-repeat;
+    object-fit: top;
+    background-position: center;
+    opacity: 0.8;
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+
+
 }

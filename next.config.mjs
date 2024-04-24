@@ -20,11 +20,19 @@ const nextConfig = {
             },
             {
                 protocol: 'https',
-                hostname:'i.ibb.co'
+                hostname: 'i.ibb.co'
             },
             {
                 protocol: 'https',
-                hostname:'media1.calvinklein.com'
+                hostname: 'media1.calvinklein.com'
+            },
+            {
+                protocol: 'https',
+                hostname: 'dummyimage.com'
+            },
+            {
+                protocol: 'https',
+                hostname: 'www.youngla.com'
             }
         ]
     },

@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const MONGO_URI: any = 'mongodb://127.0.0.1:27017/Beyoung';
+const MONGO_URI: any = 'mongodb+srv://syedtalha:talha@cluster0.x4fnhok.mongodb.net/Beyoung?retryWrites=true&w=majority&appName=Cluster0';
 
 const connectDB = async () => {
     try {
